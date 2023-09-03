@@ -5,6 +5,8 @@ services:
     image: postgres:latest
     ports:
       - 5432:5432
+    network:
+      - host
     env_file: 
       - postgres.env
     volumes: 
